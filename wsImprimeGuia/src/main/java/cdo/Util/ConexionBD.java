@@ -28,7 +28,7 @@ public class ConexionBD {
 			USUARIO_BD = "admin.loader";
 			PASSWORD_BD = "loader.admin";
 		}
-		nombreServidorBD = "jdbc:mysql://"+servidorCdo.toLowerCase()+":3306/"+servidorCdo.toUpperCase();
+		nombreServidorBD = "jdbc:mysql://des"+servidorCdo.toLowerCase()+":3306/"+servidorCdo.toUpperCase();
 		}
 		Class.forName("com.mysql.jdbc.Driver");
 		conexionBD = DriverManager.getConnection(nombreServidorBD, USUARIO_BD, PASSWORD_BD);
